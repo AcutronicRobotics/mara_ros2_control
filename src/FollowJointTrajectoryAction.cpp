@@ -21,8 +21,8 @@ FollowJointTrajectoryAction::FollowJointTrajectoryAction(const rclcpp::NodeOptio
                                             this->get_node_graph_interface(),
                                             this->get_node_logging_interface(),
                                             this->get_node_waitables_interface(),
-                                            "/hrim_actuation_servomotor_000000000001/trajectory_axis2")
-                                            , std::string("/hrim_actuation_servomotor_000000000001/trajectory_axis2") ));
+                                            "/hrim_actuator_rotaryservo_000000000001/trajectory_axis2")
+                                            , std::string("/hrim_actuator_rotaryservo_000000000001/trajectory_axis2") ));
 
     action_clients.push_back(
         std::make_shared<TrajectoryActionClient>(rclcpp_action::create_client<hrim_actuator_rotaryservo_actions::action::GoalJointTrajectory>(
@@ -30,40 +30,40 @@ FollowJointTrajectoryAction::FollowJointTrajectoryAction(const rclcpp::NodeOptio
                                             this->get_node_graph_interface(),
                                             this->get_node_logging_interface(),
                                             this->get_node_waitables_interface(),
-                                            "/hrim_actuation_servomotor_000000000001/trajectory_axis1")
-                                            , std::string("/hrim_actuation_servomotor_000000000001/trajectory_axis1") ));
+                                            "/hrim_actuator_rotaryservo_000000000001/trajectory_axis1")
+                                            , std::string("/hrim_actuator_rotaryservo_000000000001/trajectory_axis1") ));
     action_clients.push_back(
         std::make_shared<TrajectoryActionClient>(rclcpp_action::create_client<hrim_actuator_rotaryservo_actions::action::GoalJointTrajectory>(
                                            this->get_node_base_interface(),
                                            this->get_node_graph_interface(),
                                            this->get_node_logging_interface(),
                                            this->get_node_waitables_interface(),
-                                           "/hrim_actuation_servomotor_000000000002/trajectory_axis1")
-                                           , std::string("/hrim_actuation_servomotor_000000000002/trajectory_axis1") ));
+                                           "/hrim_actuator_rotaryservo_000000000002/trajectory_axis1")
+                                           , std::string("/hrim_actuator_rotaryservo_000000000002/trajectory_axis1") ));
     action_clients.push_back(
        std::make_shared<TrajectoryActionClient>(rclcpp_action::create_client<hrim_actuator_rotaryservo_actions::action::GoalJointTrajectory>(
                                           this->get_node_base_interface(),
                                           this->get_node_graph_interface(),
                                           this->get_node_logging_interface(),
                                           this->get_node_waitables_interface(),
-                                          "/hrim_actuation_servomotor_000000000002/trajectory_axis2")
-                                          , std::string("/hrim_actuation_servomotor_000000000002/trajectory_axis2") ));
+                                          "/hrim_actuator_rotaryservo_000000000002/trajectory_axis2")
+                                          , std::string("/hrim_actuator_rotaryservo_000000000002/trajectory_axis2") ));
     action_clients.push_back(
        std::make_shared<TrajectoryActionClient>(rclcpp_action::create_client<hrim_actuator_rotaryservo_actions::action::GoalJointTrajectory>(
                                          this->get_node_base_interface(),
                                          this->get_node_graph_interface(),
                                          this->get_node_logging_interface(),
                                          this->get_node_waitables_interface(),
-                                         "/hrim_actuation_servomotor_000000000003/trajectory_axis1")
-                                         , std::string("/hrim_actuation_servomotor_000000000003/trajectory_axis1") ));
+                                         "/hrim_actuator_rotaryservo_000000000003/trajectory_axis1")
+                                         , std::string("/hrim_actuator_rotaryservo_000000000003/trajectory_axis1") ));
     action_clients.push_back(
         std::make_shared<TrajectoryActionClient>(rclcpp_action::create_client<hrim_actuator_rotaryservo_actions::action::GoalJointTrajectory>(
                                         this->get_node_base_interface(),
                                         this->get_node_graph_interface(),
                                         this->get_node_logging_interface(),
                                         this->get_node_waitables_interface(),
-                                        "/hrim_actuation_servomotor_000000000003/trajectory_axis2")
-                                        , std::string("/hrim_actuation_servomotor_000000000003/trajectory_axis2") ));
+                                        "/hrim_actuator_rotaryservo_000000000003/trajectory_axis2")
+                                        , std::string("/hrim_actuator_rotaryservo_000000000003/trajectory_axis2") ));
 }
 
 rclcpp_action::GoalResponse FollowJointTrajectoryAction::handle_goal(
